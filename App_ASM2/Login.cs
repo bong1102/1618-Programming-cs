@@ -22,17 +22,17 @@ namespace App_ASM2
             Application.Exit();
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
+        private void usertxt_Click(object sender, EventArgs e)
         {
             textBox1.BackColor = Color.White;
             panel3.BackColor = Color.White;
             panel4.BackColor = SystemColors.Control;
-            textBox2.BackColor = SystemColors.Control;
+            passtxt.BackColor = SystemColors.Control;
         }
 
-        private void textBox2_Click(object sender, EventArgs e)
+        private void passtxt_Click(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.White;
+            passtxt.BackColor = Color.White;
             panel4.BackColor = Color.White;
             textBox1.BackColor = SystemColors.Control;
             panel3.BackColor = SystemColors.Control;
@@ -40,20 +40,27 @@ namespace App_ASM2
 
         private void eyehide_Click(object sender, EventArgs e)
         {
-            if(textBox2.PasswordChar == '•')
+            if(passtxt.PasswordChar == '•')
             {
                 eyeshow.BringToFront();
-                textBox2.PasswordChar = '\0';
+                passtxt.PasswordChar = '\0';
             }
         }
 
         private void eyeshow_Click(object sender, EventArgs e)
         {
-            if (textBox2.PasswordChar == '\0')
+            if (passtxt.PasswordChar == '\0')
             {
                 eyehide.BringToFront();
-                textBox2.PasswordChar = '•';
+                passtxt.PasswordChar = '•';
             }
+        }
+
+        private void loginbtn_Click_1(object sender, EventArgs e)
+        {
+            CRUD crud = new CRUD();
+            crud.Show();
+            Visible = false;
         }
     }
 }

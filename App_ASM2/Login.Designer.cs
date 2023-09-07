@@ -36,17 +36,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.loginbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.eyehide = new FontAwesome.Sharp.IconButton();
+            this.eyeshow = new FontAwesome.Sharp.IconButton();
+            this.passtxt = new System.Windows.Forms.TextBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.closebtn = new System.Windows.Forms.Button();
-            this.eyeshow = new FontAwesome.Sharp.IconButton();
-            this.eyehide = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -125,7 +125,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.loginbtn);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label5);
@@ -149,44 +149,73 @@
             this.button2.Text = "Forget Password ?";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // loginbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(153, 332);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 45);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
+            this.loginbtn.FlatAppearance.BorderSize = 0;
+            this.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginbtn.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.loginbtn.Location = new System.Drawing.Point(153, 332);
+            this.loginbtn.Name = "loginbtn";
+            this.loginbtn.Size = new System.Drawing.Size(145, 45);
+            this.loginbtn.TabIndex = 9;
+            this.loginbtn.Text = "LOGIN";
+            this.loginbtn.UseVisualStyleBackColor = false;
+            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click_1);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.eyehide);
             this.panel4.Controls.Add(this.eyeshow);
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.passtxt);
             this.panel4.Controls.Add(this.iconButton2);
             this.panel4.Location = new System.Drawing.Point(0, 257);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(450, 45);
             this.panel4.TabIndex = 8;
             // 
-            // textBox2
+            // eyehide
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.textBox2.Location = new System.Drawing.Point(45, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '•';
-            this.textBox2.Size = new System.Drawing.Size(402, 29);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            this.eyehide.ForeColor = System.Drawing.SystemColors.Control;
+            this.eyehide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.eyehide.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eyehide.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.eyehide.IconSize = 30;
+            this.eyehide.Location = new System.Drawing.Point(410, 4);
+            this.eyehide.Name = "eyehide";
+            this.eyehide.Size = new System.Drawing.Size(37, 35);
+            this.eyehide.TabIndex = 5;
+            this.eyehide.UseVisualStyleBackColor = true;
+            this.eyehide.Click += new System.EventHandler(this.eyehide_Click);
+            // 
+            // eyeshow
+            // 
+            this.eyeshow.ForeColor = System.Drawing.SystemColors.Control;
+            this.eyeshow.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.eyeshow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.eyeshow.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.eyeshow.IconSize = 30;
+            this.eyeshow.Location = new System.Drawing.Point(410, 5);
+            this.eyeshow.Name = "eyeshow";
+            this.eyeshow.Size = new System.Drawing.Size(37, 35);
+            this.eyeshow.TabIndex = 4;
+            this.eyeshow.UseVisualStyleBackColor = true;
+            this.eyeshow.Click += new System.EventHandler(this.eyeshow_Click);
+            // 
+            // passtxt
+            // 
+            this.passtxt.BackColor = System.Drawing.Color.White;
+            this.passtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passtxt.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passtxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
+            this.passtxt.Location = new System.Drawing.Point(45, 10);
+            this.passtxt.Name = "passtxt";
+            this.passtxt.PasswordChar = '•';
+            this.passtxt.Size = new System.Drawing.Size(402, 39);
+            this.passtxt.TabIndex = 3;
+            this.passtxt.Click += new System.EventHandler(this.passtxt_Click);
             // 
             // iconButton2
             // 
@@ -214,13 +243,13 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
             this.textBox1.Location = new System.Drawing.Point(45, 11);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(402, 29);
+            this.textBox1.Size = new System.Drawing.Size(402, 39);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.Click += new System.EventHandler(this.usertxt_Click);
             // 
             // iconButton1
             // 
@@ -262,34 +291,6 @@
             this.closebtn.UseVisualStyleBackColor = true;
             this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
             // 
-            // eyeshow
-            // 
-            this.eyeshow.ForeColor = System.Drawing.SystemColors.Control;
-            this.eyeshow.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.eyeshow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyeshow.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.eyeshow.IconSize = 30;
-            this.eyeshow.Location = new System.Drawing.Point(410, 5);
-            this.eyeshow.Name = "eyeshow";
-            this.eyeshow.Size = new System.Drawing.Size(37, 35);
-            this.eyeshow.TabIndex = 4;
-            this.eyeshow.UseVisualStyleBackColor = true;
-            this.eyeshow.Click += new System.EventHandler(this.eyeshow_Click);
-            // 
-            // eyehide
-            // 
-            this.eyehide.ForeColor = System.Drawing.SystemColors.Control;
-            this.eyehide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.eyehide.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyehide.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.eyehide.IconSize = 30;
-            this.eyehide.Location = new System.Drawing.Point(410, 4);
-            this.eyehide.Name = "eyehide";
-            this.eyehide.Size = new System.Drawing.Size(37, 35);
-            this.eyehide.TabIndex = 5;
-            this.eyehide.UseVisualStyleBackColor = true;
-            this.eyehide.Click += new System.EventHandler(this.eyehide_Click);
-            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -329,9 +330,9 @@
         private System.Windows.Forms.Panel panel4;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox passtxt;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton eyeshow;
