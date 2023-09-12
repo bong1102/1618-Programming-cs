@@ -37,7 +37,7 @@ namespace App_ASM2
             textBox1.BackColor = SystemColors.Control;
             panel3.BackColor = SystemColors.Control;
         }
-
+        //ẩn pass
         private void eyehide_Click(object sender, EventArgs e)
         {
             if(passtxt.PasswordChar == '•')
@@ -46,7 +46,7 @@ namespace App_ASM2
                 passtxt.PasswordChar = '\0';
             }
         }
-
+        //hiện pass
         private void eyeshow_Click(object sender, EventArgs e)
         {
             if (passtxt.PasswordChar == '\0')
@@ -58,9 +58,20 @@ namespace App_ASM2
 
         private void loginbtn_Click_1(object sender, EventArgs e)
         {
-            CRUD crud = new CRUD();
-            crud.Show();
-            Visible = false;
+            // ẩn form login sau khi đăng nhập
+            this.Hide();
+            // Hiển thị Home form
+            Home home = Home.GetInstance();
+            //hiển thị màu khi chuyển từ login sang
+            home.SetColor(Color.DarkCyan);
+            home.Show();
+            // Đóng cửa sổ đăng nhập (LoginForm)
+            //this.Close();
+        }
+        // liên kết link github
+        private void linklb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/bong1102/1618-Programming-cs");
         }
     }
 }

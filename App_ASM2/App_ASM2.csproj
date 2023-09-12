@@ -53,11 +53,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRUD.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CRUD.Designer.cs">
-      <DependentUpon>CRUD.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -67,27 +67,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CRUD.resx">
-      <DependentUpon>CRUD.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -102,6 +103,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mũ-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-home-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-courses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-grade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_of_GW_Vietnam %281%29%281%29.png" />
+    <None Include="Resources\logo_of_GW_Vietnam%283%29%283%29.png" />
+    <None Include="Resources\logo_of_GW_Vietnam%284%29%284%29.png" />
+    <None Include="Resources\logo_of_GW_Vietnam%282%29%282%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -47,6 +47,7 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.closebtn = new System.Windows.Forms.Button();
+            this.linklb = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.Controls.Add(this.linklb);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -73,7 +75,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(246, 493);
+            this.label4.Location = new System.Drawing.Point(237, 493);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 25);
             this.label4.TabIndex = 5;
@@ -116,9 +118,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox1.Image = global::App_ASM2.Properties.Resources.mũ_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(-39, -76);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 53);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 313);
+            this.pictureBox1.Size = new System.Drawing.Size(257, 243);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -291,6 +294,18 @@
             this.closebtn.UseVisualStyleBackColor = true;
             this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
             // 
+            // linklb
+            // 
+            this.linklb.AutoSize = true;
+            this.linklb.Font = new System.Drawing.Font("Century Schoolbook", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linklb.Location = new System.Drawing.Point(286, 529);
+            this.linklb.Name = "linklb";
+            this.linklb.Size = new System.Drawing.Size(70, 19);
+            this.linklb.TabIndex = 6;
+            this.linklb.TabStop = true;
+            this.linklb.Text = "GitHub";
+            this.linklb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_LinkClicked);
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -337,6 +352,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton eyeshow;
         private FontAwesome.Sharp.IconButton eyehide;
+        private System.Windows.Forms.LinkLabel linklb;
     }
 }
 
