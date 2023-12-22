@@ -28,331 +28,192 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.loginbtn = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.eyehide = new FontAwesome.Sharp.IconButton();
-            this.eyeshow = new FontAwesome.Sharp.IconButton();
-            this.passtxt = new System.Windows.Forms.TextBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.closebtn = new System.Windows.Forms.Button();
-            this.linklb = new System.Windows.Forms.LinkLabel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.user_pic = new System.Windows.Forms.PictureBox();
+            this.pw_pic = new System.Windows.Forms.PictureBox();
+            this.Github_pic = new System.Windows.Forms.PictureBox();
+            this.Loginbtn = new System.Windows.Forms.Button();
+            this.usertxt = new System.Windows.Forms.TextBox();
+            this.pwtxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.user_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pw_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Github_pic)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(84, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Library Management";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(190, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 44);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "System ";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel1.Controls.Add(this.linklb);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(151, 282);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 550);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(289, 1);
+            this.panel1.TabIndex = 2;
             // 
-            // label4
+            // panel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(237, 493);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Bong";
+            this.panel2.Location = new System.Drawing.Point(151, 381);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(290, 1);
+            this.panel2.TabIndex = 3;
+            // 
+            // user_pic
+            // 
+            this.user_pic.BackColor = System.Drawing.Color.Transparent;
+            this.user_pic.Image = global::App_ASM2.Properties.Resources.user_icon;
+            this.user_pic.Location = new System.Drawing.Point(95, 236);
+            this.user_pic.Name = "user_pic";
+            this.user_pic.Size = new System.Drawing.Size(50, 50);
+            this.user_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.user_pic.TabIndex = 4;
+            this.user_pic.TabStop = false;
+            // 
+            // pw_pic
+            // 
+            this.pw_pic.BackColor = System.Drawing.Color.Transparent;
+            this.pw_pic.Image = global::App_ASM2.Properties.Resources.pw_icon;
+            this.pw_pic.Location = new System.Drawing.Point(95, 335);
+            this.pw_pic.Name = "pw_pic";
+            this.pw_pic.Size = new System.Drawing.Size(50, 50);
+            this.pw_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pw_pic.TabIndex = 5;
+            this.pw_pic.TabStop = false;
+            // 
+            // Github_pic
+            // 
+            this.Github_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Github_pic.Image = global::App_ASM2.Properties.Resources.github_icon;
+            this.Github_pic.Location = new System.Drawing.Point(236, 486);
+            this.Github_pic.Name = "Github_pic";
+            this.Github_pic.Size = new System.Drawing.Size(80, 80);
+            this.Github_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Github_pic.TabIndex = 6;
+            this.Github_pic.TabStop = false;
+            this.Github_pic.Click += new System.EventHandler(this.Github_pic_Click);
+            // 
+            // Loginbtn
+            // 
+            this.Loginbtn.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loginbtn.Location = new System.Drawing.Point(223, 404);
+            this.Loginbtn.Name = "Loginbtn";
+            this.Loginbtn.Size = new System.Drawing.Size(105, 50);
+            this.Loginbtn.TabIndex = 7;
+            this.Loginbtn.Text = "Login";
+            this.Loginbtn.UseVisualStyleBackColor = true;
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
+            // 
+            // usertxt
+            // 
+            this.usertxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
+            this.usertxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usertxt.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usertxt.Location = new System.Drawing.Point(155, 251);
+            this.usertxt.Name = "usertxt";
+            this.usertxt.Size = new System.Drawing.Size(280, 29);
+            this.usertxt.TabIndex = 8;
+            this.usertxt.Text = "User Name";
+            this.usertxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usertxt_MouseClick);
+            // 
+            // pwtxt
+            // 
+            this.pwtxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
+            this.pwtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pwtxt.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwtxt.Location = new System.Drawing.Point(155, 350);
+            this.pwtxt.Name = "pwtxt";
+            this.pwtxt.Size = new System.Drawing.Size(285, 29);
+            this.pwtxt.TabIndex = 9;
+            this.pwtxt.Text = "Password";
+            this.pwtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pwtxt_MouseClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(203, 468);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(401, 666);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Develop By";
+            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Created by";
             // 
-            // label2
+            // linkLabel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(-7, 287);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 35);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "GreenWich University";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(70, 240);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 35);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome to ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.Image = global::App_ASM2.Properties.Resources.mũ_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(42, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 243);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.loginbtn);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.closebtn);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(350, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 550);
-            this.panel2.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(112, 397);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(221, 45);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Forget Password ?";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // loginbtn
-            // 
-            this.loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.loginbtn.FlatAppearance.BorderSize = 0;
-            this.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginbtn.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.loginbtn.Location = new System.Drawing.Point(153, 332);
-            this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(145, 45);
-            this.loginbtn.TabIndex = 9;
-            this.loginbtn.Text = "LOGIN";
-            this.loginbtn.UseVisualStyleBackColor = false;
-            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click_1);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.eyehide);
-            this.panel4.Controls.Add(this.eyeshow);
-            this.panel4.Controls.Add(this.passtxt);
-            this.panel4.Controls.Add(this.iconButton2);
-            this.panel4.Location = new System.Drawing.Point(0, 257);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 45);
-            this.panel4.TabIndex = 8;
-            // 
-            // eyehide
-            // 
-            this.eyehide.ForeColor = System.Drawing.SystemColors.Control;
-            this.eyehide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.eyehide.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyehide.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.eyehide.IconSize = 30;
-            this.eyehide.Location = new System.Drawing.Point(410, 4);
-            this.eyehide.Name = "eyehide";
-            this.eyehide.Size = new System.Drawing.Size(37, 35);
-            this.eyehide.TabIndex = 5;
-            this.eyehide.UseVisualStyleBackColor = true;
-            this.eyehide.Click += new System.EventHandler(this.eyehide_Click);
-            // 
-            // eyeshow
-            // 
-            this.eyeshow.ForeColor = System.Drawing.SystemColors.Control;
-            this.eyeshow.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.eyeshow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.eyeshow.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.eyeshow.IconSize = 30;
-            this.eyeshow.Location = new System.Drawing.Point(410, 5);
-            this.eyeshow.Name = "eyeshow";
-            this.eyeshow.Size = new System.Drawing.Size(37, 35);
-            this.eyeshow.TabIndex = 4;
-            this.eyeshow.UseVisualStyleBackColor = true;
-            this.eyeshow.Click += new System.EventHandler(this.eyeshow_Click);
-            // 
-            // passtxt
-            // 
-            this.passtxt.BackColor = System.Drawing.Color.White;
-            this.passtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passtxt.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passtxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.passtxt.Location = new System.Drawing.Point(45, 10);
-            this.passtxt.Name = "passtxt";
-            this.passtxt.PasswordChar = '•';
-            this.passtxt.Size = new System.Drawing.Size(402, 39);
-            this.passtxt.TabIndex = 3;
-            this.passtxt.Click += new System.EventHandler(this.passtxt_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.ForeColor = System.Drawing.SystemColors.Control;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(2, 5);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(37, 35);
-            this.iconButton2.TabIndex = 0;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.iconButton1);
-            this.panel3.Location = new System.Drawing.Point(0, 174);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 45);
-            this.panel3.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(185)))));
-            this.textBox1.Location = new System.Drawing.Point(45, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(402, 39);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Click += new System.EventHandler(this.usertxt_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.Control;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(2, 5);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(37, 35);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label5.Location = new System.Drawing.Point(173, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 35);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Login";
-            // 
-            // closebtn
-            // 
-            this.closebtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closebtn.FlatAppearance.BorderSize = 0;
-            this.closebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closebtn.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closebtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
-            this.closebtn.Location = new System.Drawing.Point(410, 0);
-            this.closebtn.Name = "closebtn";
-            this.closebtn.Size = new System.Drawing.Size(40, 40);
-            this.closebtn.TabIndex = 6;
-            this.closebtn.Tag = " ";
-            this.closebtn.Text = "X";
-            this.closebtn.UseVisualStyleBackColor = true;
-            this.closebtn.Click += new System.EventHandler(this.closebtn_Click);
-            // 
-            // linklb
-            // 
-            this.linklb.AutoSize = true;
-            this.linklb.Font = new System.Drawing.Font("Century Schoolbook", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklb.Location = new System.Drawing.Point(286, 529);
-            this.linklb.Name = "linklb";
-            this.linklb.Size = new System.Drawing.Size(70, 19);
-            this.linklb.TabIndex = 6;
-            this.linklb.TabStop = true;
-            this.linklb.Text = "GitHub";
-            this.linklb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_LinkClicked);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Location = new System.Drawing.Point(481, 666);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(47, 20);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Bong";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Login
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 550);
-            this.ControlBox = false;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::App_ASM2.Properties.Resources.backgr;
+            this.ClientSize = new System.Drawing.Size(543, 719);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pwtxt);
+            this.Controls.Add(this.usertxt);
+            this.Controls.Add(this.Loginbtn);
+            this.Controls.Add(this.Github_pic);
+            this.Controls.Add(this.pw_pic);
+            this.Controls.Add(this.user_pic);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "Login";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.user_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pw_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Github_pic)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox user_pic;
+        private System.Windows.Forms.PictureBox pw_pic;
+        private System.Windows.Forms.PictureBox Github_pic;
+        private System.Windows.Forms.Button Loginbtn;
+        private System.Windows.Forms.TextBox usertxt;
+        private System.Windows.Forms.TextBox pwtxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button closebtn;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.TextBox passtxt;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button loginbtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton eyeshow;
-        private FontAwesome.Sharp.IconButton eyehide;
-        private System.Windows.Forms.LinkLabel linklb;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
-

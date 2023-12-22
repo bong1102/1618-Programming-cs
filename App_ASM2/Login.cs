@@ -17,61 +17,48 @@ namespace App_ASM2
             InitializeComponent();
         }
 
-        private void closebtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        private void usertxt_Click(object sender, EventArgs e)
-        {
-            textBox1.BackColor = Color.White;
-            panel3.BackColor = Color.White;
-            panel4.BackColor = SystemColors.Control;
-            passtxt.BackColor = SystemColors.Control;
-        }
 
-        private void passtxt_Click(object sender, EventArgs e)
+        private void usertxt_MouseClick(object sender, MouseEventArgs e)
         {
-            passtxt.BackColor = Color.White;
-            panel4.BackColor = Color.White;
-            textBox1.BackColor = SystemColors.Control;
-            panel3.BackColor = SystemColors.Control;
-        }
-        //ẩn pass
-        private void eyehide_Click(object sender, EventArgs e)
-        {
-            if(passtxt.PasswordChar == '•')
+            if (usertxt.Text == "User Name")
             {
-                eyeshow.BringToFront();
-                passtxt.PasswordChar = '\0';
-            }
-        }
-        //hiện pass
-        private void eyeshow_Click(object sender, EventArgs e)
-        {
-            if (passtxt.PasswordChar == '\0')
-            {
-                eyehide.BringToFront();
-                passtxt.PasswordChar = '•';
+                usertxt.Clear();
             }
         }
 
-        private void loginbtn_Click_1(object sender, EventArgs e)
+        private void pwtxt_MouseClick(object sender, MouseEventArgs e)
         {
-            // ẩn form login sau khi đăng nhập
-            this.Hide();
-            // Hiển thị Home form
-            Home home = Home.GetInstance();
-            //hiển thị màu khi chuyển từ login sang
-            home.SetColor(Color.DarkCyan);
-            home.Show();
-            // Đóng cửa sổ đăng nhập (LoginForm)
-            //this.Close();
+            if (pwtxt.Text == "Password")
+            {
+                pwtxt.Clear();
+            }
         }
-        // liên kết link github
-        private void linklb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            if (usertxt.Text == "hoa" && pwtxt.Text == "123")
+            {
+                Library f = new Library();
+                this.Hide();
+                f.Show();
+            }
+            else if (usertxt.Text != "hoa" || pwtxt.Text != "123")
+            {
+                MessageBox.Show("Invalid User or Password!! \n Please enter correct User and password!");
+                this.Show();
+
+            }
+        }
+
+        private void Github_pic_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/bong1102/1618-Programming-cs");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/maihoa.lethi.735");
         }
     }
 }

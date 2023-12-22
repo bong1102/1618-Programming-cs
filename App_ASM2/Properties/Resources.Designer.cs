@@ -63,9 +63,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_courses {
+        internal static System.Drawing.Bitmap backgr {
             get {
-                object obj = ResourceManager.GetObject("icon-courses", resourceCulture);
+                object obj = ResourceManager.GetObject("backgr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_department {
+        internal static System.Drawing.Bitmap book_icon {
             get {
-                object obj = ResourceManager.GetObject("icon-department", resourceCulture);
+                object obj = ResourceManager.GetObject("book-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_fees {
+        internal static System.Drawing.Bitmap borrow_book_icon {
             get {
-                object obj = ResourceManager.GetObject("icon-fees", resourceCulture);
+                object obj = ResourceManager.GetObject("borrow-book-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,19 +93,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_grade {
+        internal static System.Drawing.Bitmap github_icon {
             get {
-                object obj = ResourceManager.GetObject("icon-grade", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_home {
-            get {
-                object obj = ResourceManager.GetObject("icon-home", resourceCulture);
+                object obj = ResourceManager.GetObject("github-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +133,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_teacher {
+        internal static System.Drawing.Bitmap pw_icon {
             get {
-                object obj = ResourceManager.GetObject("icon-teacher", resourceCulture);
+                object obj = ResourceManager.GetObject("pw-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +143,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_of_GW_Vietnam__1__1_ {
+        internal static System.Drawing.Bitmap return_book_icon {
             get {
-                object obj = ResourceManager.GetObject("logo_of_GW_Vietnam (1)(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("return-book-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,49 +153,9 @@ namespace App_ASM2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_of_GW_Vietnam_2__2_ {
+        internal static System.Drawing.Bitmap user_icon {
             get {
-                object obj = ResourceManager.GetObject("logo_of_GW_Vietnam(2)(2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_of_GW_Vietnam_3__3_ {
-            get {
-                object obj = ResourceManager.GetObject("logo_of_GW_Vietnam(3)(3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_of_GW_Vietnam_4__4_ {
-            get {
-                object obj = ResourceManager.GetObject("logo_of_GW_Vietnam(4)(4)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mũ_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("mũ-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mũ_removebg_preview__1_ {
-            get {
-                object obj = ResourceManager.GetObject("mũ-removebg-preview (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

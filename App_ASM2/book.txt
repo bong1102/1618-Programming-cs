@@ -1,0 +1,17 @@
+	1	,	The Book of Healing	,	Najwa Zebian	,	11/9/2021 12:00:00 AM
+	2	,	The Body Keeps the Score	,	Bessel van der Kolk	,	9/25/2014 12:00:00 AM
+	3	,	It Didn't Start with You	,	Mark Wolynn	,	6/30/2022 12:00:00 AM
+	4	,	Healing for No One But Me	,	Jennae Cecelia	,	4/19/2022 12:00:00 AM
+	5	,	No Bad Parts	,	Richard Schwartz	,	11/23/2023 12:00:00 AM
+	6	,	Chakra Healing	,	Lorenz Usai	,	5/13/2021 12:00:00 AM
+	7	,	It's OK That You're Not OK	,	Megan Devine	,	10/1/2017 12:00:00 AM
+	8	,	Bridging the Soft Skills Gap	,	Bruce Tulgan	,	9/15/2015 12:00:00 AM
+	9	,	Soft Skills for the Workplace	,	Goodheart-Willcox Publisher	,	9/25/2020 12:00:00 AM
+	1	,	The Book of Healing	,	Najwa Zebian	,	11/9/2021 12:00:00 AM
+	2	,	The Body Keeps the Score	,	Bessel van der Kolk	,	9/25/2014 12:00:00 AM
+	3	,	It Didn't Start with You	,	Mark Wolynn	,	6/30/2022 12:00:00 AM
+	4	,	Healing for No One But Me	,	Jennae Cecelia	,	4/19/2022 12:00:00 AM
+	5	,	No Bad Parts	,	Richard Schwartz	,	11/23/2023 12:00:00 AM
+	6	,	Chakra Healing	,	Lorenz Usai	,	5/13/2021 12:00:00 AM
+	7	,	It's OK That You're Not OK	,	Megan Devine	,	10/1/2017 12:00:00 AM
+	8	,	Bridging the Soft Skills Gap	,	Bruce Tulgan	,	9/15/2015 12:00:00 AM
